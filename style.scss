@@ -91,6 +91,29 @@ img {
     }
 }
 
+/* Testimonial Section */
+
+.testimonials {
+    padding: 40px 0;
+    h3 {
+        width: 700px;
+        margin-bottom: 40px;
+    }
+    .testimonials-grid {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 30px;
+        .card {
+            p {
+                &:nth-child(2) {
+                    margin-top: 30px;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
 
 /* Utility Classes */
 .container {
@@ -103,6 +126,15 @@ img {
     margin: 0 auto;
     padding: 0 15px;
 }
+
+/* Card */
+.card {
+    background-color: #fff;
+    color: #000000;
+    border-radius: 10px;
+    padding: 20px;
+}
+
 // buttons
 .btn {
     display: inline-block;
